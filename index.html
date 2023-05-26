@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Alien Game</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Alien game</h1>
+    </header>
+    
+    <h2>Help the alien to steal the rockets, but be careful! Don't crash into the comets </h2>
+    <img src="./Pictures/Alien.png" alt="Alien" id="img1">
+    <img src="./Pictures/Astronaut.png" alt="Austronaut" id="img2">
+
+    <div class="game-container">
+        <section class="messages">
+            <p>Lives: <span id="lives"></span> </span> Record: 🏁<span id="record"></span> Time: ⏰<span id="time"></span></p>
+            <p id="result"></p>
+        </section>
+
+        <canvas id="game"></canvas>
+
+        <section class="btns">
+            <button id="up">Up ▲</button>
+            <button id="left">Left ◀</button>
+            <button id="rigth">Rigth ▶</button>
+            <button id="down">Down ▼</button>
+        </section>
+    </div>
+
+    <script src="maps.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
